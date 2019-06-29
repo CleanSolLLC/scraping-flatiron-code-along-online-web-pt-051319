@@ -1,15 +1,23 @@
 require 'pry'
 
 class Course
-  attr_accessor :title, :schedule, :descrription
+  attr_accessor :title, :schedule, :description
 
   @@all = []
 
-  def initialize(title = nil, schedule = nil, descrription = nil)
-    @title = title
-    @schedule = schedule
-    @description = description
+  def initialize(title = nil, schedule = nil, description = nil)
+    #@title = title
+    #@schedule = schedule
+    #@description = description
     @@all << self
+  end
+
+  def self.all
+    @@all
+  end
+
+  def self.reset_all
+    self.all.clear
   end
 
 end
