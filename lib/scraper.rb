@@ -14,7 +14,7 @@ class Scraper
         binding.pry
       end
       #doc.css(".post").first.css("h2").text
-      
+
   end
 
   def get_courses
