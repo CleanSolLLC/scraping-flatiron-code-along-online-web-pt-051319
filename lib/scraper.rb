@@ -1,6 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 require 'pry'
+require 'awesome_print'
 
 require_relative './course.rb'
 
